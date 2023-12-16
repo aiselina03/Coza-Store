@@ -1,0 +1,124 @@
+.contactPage {
+  width: 100%;
+  font-family: sans-serif;
+  .contact {
+    width: 100%;
+    height: 30vh;
+    background-image: url("https://preview.colorlib.com/theme/cozastore/images/bg-01.jpg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    h1 {
+      color: white;
+      font-size: 48px;
+      line-height: 1.1;
+      font-weight: 900;
+    }
+  }
+  .container {
+    width: 80%;
+    margin: 70px auto;
+    .send {
+      width: 100%;
+      height: 70vh;
+      display: flex;
+      justify-content: center;
+      .form {
+        border: 1px solid gainsboro;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        Form {
+          outline: none;
+          width: 100%;
+          display: grid;
+          justify-content: center;
+          p {
+            font-size: 25px;
+            line-height: 1.5;
+            text-align: center;
+            margin: 25px 0;
+          }
+          .label {
+            border: 1px solid gainsboro;
+            outline: none;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 20px;
+            padding-left: 20px;
+          }
+          .form-textarea {
+            border: 1px solid gainsboro;
+            outline: none;
+            margin-bottom: 20px;
+            width: 400px;
+            height: 200px;
+            padding: 20px;
+          }
+          button {
+            width: 100%;
+            height: 46px;
+            background-color: #222;
+            color: white;
+            border-radius: 23px;
+            border: none;
+            transition: all 600ms;
+            cursor: pointer;
+            font-size: 15px;
+            margin-bottom: 20px;
+            &:hover {
+              border-color: #717fe0;
+              background-color: #717fe0;
+              color: #fff;
+            }
+          }
+        }
+      }
+      .infos {
+        width: 50%;
+        border: 1px solid gainsboro;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .info {
+          .header {
+            color: #333;
+            font-size: 18px;
+            .fa-light {
+              margin-right: 20px;
+            }
+          }
+          .location {
+            padding-bottom: 20px;
+            .address {
+              color: #888;
+              font-size: 15px;
+              line-height: 25px;
+              margin: 20px 35px;
+            }
+          }
+          .talk,
+          .mail {
+            padding-bottom: 20px;
+            .number,
+            .mailAddress {
+              color: #717fe0;
+              font-size: 15px;
+              line-height: 25px;
+              margin: 20px 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .map {
+    iframe {
+      width: 100%;
+      height: 400px;
+    }
+  }
+}

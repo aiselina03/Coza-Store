@@ -1,0 +1,87 @@
+.footer {
+  width: 100%;
+  height: 50vh;
+  background-color: #222;
+  font-family: sans-serif;
+  .containerFooter {
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    .categories,
+    .help {
+      ul {
+        li {
+          font-size: 16px;
+          line-height: 40px;
+          color: #b2b2b2;
+          transition: all 600ms;
+          cursor: pointer;
+          &:hover {
+            color: #717fe0;
+          }
+        }
+      }
+    }
+
+    .about {
+      p {
+        color: #b2b2b2;
+        line-height: 35px;
+      }
+      .icons {
+        display: flex;
+        gap: 15px;
+        .fa-brands {
+          cursor: pointer;
+          color: #b2b2b2;
+          font-size: 20px;
+          margin-top: 15px;
+          transition: all 600ms;
+          &:hover {
+            color: #717fe0;
+          }
+        }
+      }
+    }
+    .letter {
+      line-height: 40px;
+      input {
+        background-color: transparent;
+        width: 100%;
+        padding: 10px 15px;
+        border: none;
+        outline: none;
+        margin: 15px 0;
+        height: 50px;
+        font-size: 18px;
+      }
+      button {
+        background-color: #717fe0;
+        color: white;
+        border: none;
+        width: 150px;
+        height: 50px;
+        border-radius: 25px;
+        font-weight: bold;
+        padding: 5px 10px;
+        font-size: 16px;
+        transition: all 600ms;
+        &:hover {
+          background-color: #ffffff;
+          cursor: pointer;
+          color: #717fe0;
+        }
+      }
+    }
+    h3 {
+      color: #fff;
+      font-size: 20px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+  }
+}

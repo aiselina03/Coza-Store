@@ -1,0 +1,80 @@
+.wishlistCards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+  font-family: sans-serif;
+  width: 80%;
+  margin: 50px auto;
+  height: auto;
+  .card {
+    margin-top: 55px;
+    border: 1px solid #f0f2f1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    .addBtn {
+      cursor: pointer;
+      background-color: #717fe0;
+      padding: 8px 12px;
+      color: white;
+      border: none;
+      transition: all 500ms;
+      font-size: 15px;
+      &:hover {
+        background-color: rgb(86, 96, 162);
+      }
+    }
+    .text {
+      font-family: sans-serif;
+      padding: 20px;
+      h4 {
+        padding-bottom: 15px;
+        color: #333;
+      }
+      p {
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+    .img {
+      img {
+        width: 270px;
+        height: 230px;
+        transition: all 700ms;
+        cursor: pointer;
+        padding-top: 20px;
+        &:hover {
+          scale: 1.1;
+        }
+      }
+    }
+    .fa-heart {
+      cursor: pointer;
+      font-size: 22px;
+      position: absolute;
+      top: 20px;
+      left: 250px;
+      color: #717fe0;
+      transition: all 500ms;
+      &:hover {
+        scale: 1.2;
+      }
+    }
+  }
+}
+.fade {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .fa-beat-fade {
+    font-size: 100px;
+    color: #717fe0;
+  }
+}

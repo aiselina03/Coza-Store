@@ -1,0 +1,138 @@
+.cardsContainer {
+  width: 80%;
+  margin: 100px auto;
+  font-family: sans-serif;
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      gap: 35px;
+      margin-top: 30px;
+      li {
+        cursor: pointer;
+        transition: all 300ms;
+        &:hover {
+          scale: 1.2;
+        }
+      }
+    }
+    .search {
+      border: 1px solid gainsboro;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      .fa-magnifying-glass {
+        padding-left: 10px;
+      }
+      input {
+        outline: none;
+        width: 100%;
+        height: 35px;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid gainsboro;
+        border-top: 1px solid gainsboro;
+        padding: 10px 15px;
+      }
+    }
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    .card {
+      margin-top: 40px;
+      width: 300px;
+      height: 390px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+      .img {
+        position: relative;
+        img {
+          width: 270px;
+          height: 230px;
+          padding-left: 20px;
+          padding-top: 20px;
+          transition: all 700ms;
+          cursor: pointer;
+          &:hover {
+            scale: 1.1;
+          }
+        }
+        &:hover {
+          .icons {
+            opacity: 1;
+          }
+        }
+        .icons {
+          transition: all 900ms;
+          opacity: 0;
+          width: 180px;
+          height: 50px;
+          position: absolute;
+          bottom: -20px;
+          left: 55px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          gap: 23px;
+          background: rgba(103, 117, 214, 0.8);
+          .eye,
+          .heart,
+          .basket {
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+          }
+
+          a {
+            color: black;
+            .fa-eye {
+              padding: 10px;
+              font-size: 18px;
+            }
+          }
+          .fa-heart,
+          .fa-cart-shopping {
+            padding: 11px;
+            font-size: 18px;
+          }
+          .fa-solid {
+            color: #717fe0;
+          }
+        }
+      }
+      .text {
+        font-family: sans-serif;
+        padding: 35px 20px;
+        h4 {
+          padding-bottom: 15px;
+          color: #333;
+        }
+        p {
+          font-weight: bold;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+.spin {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .fa-spin {
+    font-size: 100px;
+    color: rgb(103, 117, 214);
+  }
+}
+
+::selection {
+  color: white;
+  background: rgb(103, 117, 214);
+}
